@@ -364,7 +364,7 @@ export async function getXrWarpConfigs(
         const wowOutbound = buildWarpOutbound(warpAccounts[1], endpoint, true, isPro, isKnocker);
 
         const warpConfig = await buildConfig(
-            `💦 ${index + 1} - Warp${proIndicator}🇮🇷`,
+            `SRay 2.1 ${index + 1} - Warp${proIndicator}🇮🇷`,
             [warpOutbound],
             false,
             false,
@@ -395,7 +395,7 @@ export async function getXrWarpConfigs(
     }
 
     const warpBestPing = await buildConfig(
-        `💦 Warp${proIndicator}- Best Ping 🚀`,
+        `SRay 2.1 Warp${proIndicator}- Best Ping 🚀`,
         [...proxies],
         true,
         false,
@@ -406,7 +406,7 @@ export async function getXrWarpConfigs(
     );
 
     const wowBestPing = await buildConfig(
-        `💦 WoW${proIndicator}- Best Ping 🚀`,
+        `SRay 2.1 WoW${proIndicator}- Best Ping 🚀`,
         [...chains, ...proxies],
         true,
         true,
