@@ -100,7 +100,7 @@ export async function getURLConfigs() {
     }
 
     if (chainProxy) {
-        let chainRemark = `#${encodeURIComponent('💦 Chain proxy 🔗')}`;
+        let chainRemark = `#${encodeURIComponent('SRay 2.1 Chain proxy 🔗')}`;
         if (chainProxy.startsWith('socks') || chainProxy.startsWith('http')) {
             const regex = /^(?:socks|http):\/\/([^@]+)@/;
             const isUserPass = chainProxy.match(regex);
