@@ -151,7 +151,7 @@ async function addBestPingConfigs(
     const customDomainSign = isCustomDomain ? 'D ' : '';
     const configType = `${fragmentSign}${customDomainSign}`;
 
-    const remark = `💦 ${chainSign}Best Ping ${configType}🚀`;
+    const remark = `SRay 2.1 ${chainSign}Best Ping ${configType}🚀`;
     const outbounds = [
         ...chainOutbounds,
         ...proxyOutbounds
