@@ -1,0 +1,23 @@
+name: SRay 2.1 Build Check
+on:
+  push:
+    branches: [main, feature/sray-2-1-subscription-branding]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sray-2-1-worker
+          path: dist/worker.js
