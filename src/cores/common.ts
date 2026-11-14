@@ -123,7 +123,7 @@ export async function getURLConfigs() {
             'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
             'Pragma': 'no-cache',
             'Expires': '0',
-            'Profile-Title': `base64:${base64EncodeUtf8(`💦 ${_project_} Raw`)}`,
+            'Profile-Title': `base64:${base64EncodeUtf8(`SRay 2.1`)}`,
             'DNS': remoteDNS
         }
     });
