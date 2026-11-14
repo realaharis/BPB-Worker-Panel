@@ -41,7 +41,7 @@ export async function getWireguardConfigs(isPro: boolean): Promise<Response> {
                 'PersistentKeepalive = 25'
             ].join('\n');
 
-            zip.file(`${_project_}-Warp-${index + 1}.conf`, conf);
+            zip.file(`SRay-2.1-Warp-${index + 1}.conf`, conf);
         });
 
         const zipBlob = await zip.generateAsync({ type: 'blob' });
